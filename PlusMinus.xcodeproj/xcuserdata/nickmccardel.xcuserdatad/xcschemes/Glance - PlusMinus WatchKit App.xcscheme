@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "0630"
+   version = "2.0">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+               BuildableName = "PlusMinus WatchKit App.app"
+               BlueprintName = "PlusMinus WatchKit App"
+               ReferencedContainer = "container:PlusMinus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1FD8E151AD646CE0039F626"
+               BuildableName = "PlusMinus.app"
+               BlueprintName = "PlusMinus"
+               ReferencedContainer = "container:PlusMinus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "A1FD8E3E1AD646D90039F626"
+               BuildableName = "PlusMinus WatchKit Extension.appex"
+               BlueprintName = "PlusMinus WatchKit Extension"
+               ReferencedContainer = "container:PlusMinus.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      buildConfiguration = "Debug">
+      <Testables>
+      </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+            BuildableName = "PlusMinus WatchKit App.app"
+            BlueprintName = "PlusMinus WatchKit App"
+            ReferencedContainer = "container:PlusMinus.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </TestAction>
+   <LaunchAction
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Debug"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES"
+      launchAutomaticallySubstyle = "4">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/PlusMinus">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+            BuildableName = "PlusMinus WatchKit App.app"
+            BlueprintName = "PlusMinus WatchKit App"
+            ReferencedContainer = "container:PlusMinus.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+            BuildableName = "PlusMinus WatchKit App.app"
+            BlueprintName = "PlusMinus WatchKit App"
+            ReferencedContainer = "container:PlusMinus.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <AdditionalOptions>
+      </AdditionalOptions>
+   </LaunchAction>
+   <ProfileAction
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      buildConfiguration = "Release"
+      debugDocumentVersioning = "YES"
+      launchAutomaticallySubstyle = "4">
+      <RemoteRunnable
+         runnableDebuggingMode = "2"
+         BundleIdentifier = "com.apple.springboard"
+         RemotePath = "/PlusMinus">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+            BuildableName = "PlusMinus WatchKit App.app"
+            BlueprintName = "PlusMinus WatchKit App"
+            ReferencedContainer = "container:PlusMinus.xcodeproj">
+         </BuildableReference>
+      </RemoteRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "A1FD8E4A1AD646DA0039F626"
+            BuildableName = "PlusMinus WatchKit App.app"
+            BlueprintName = "PlusMinus WatchKit App"
+            ReferencedContainer = "container:PlusMinus.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

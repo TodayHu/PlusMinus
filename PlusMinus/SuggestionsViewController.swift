@@ -1,15 +1,17 @@
 //
-//  ViewController.swift
+//  SuggestionsViewController.swift
 //  PlusMinus
 //
-//  Created by Nick McCardel on 4/8/15.
+//  Created by Nick McCardel on 4/13/15.
 //  Copyright (c) 2015 Bleu Haus Labs. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
-
+class SuggestionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate {
+    //
+    
     let containerString = "group.bhl.plusminus"
     
     var suggestions: [String] = ["Plus", "Minus", "ExampleTitle"]
@@ -34,14 +36,38 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         println("viewDidLoad finish")
         // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    func updateSuggestionDefaults() {
+        
+        for i in 0...(self.suggestionTableView.numberOfRowsInSection(0) - 1) {
+            if let text = self.suggestionTableView?.cellForRowAtIndexPath(NSIndexPath(forRow: i, inSection: 0))?.textLabel?.text as String? {
+                self.suggestions[i] = text
+            }
+        }
+        self.defaults?.setObject(self.suggestions, forKey: "suggestions")
     }
     
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        //
+        println("shouldReturn")
+        if let text = textField.text {
+            let frame = textField.frame
+            let cell = textField.superview as? UITableViewCell
+            if cell != nil {
+                cell!.textLabel!.text = text
+                textField.removeFromSuperview()
+            }
+        }
+        
+        updateSuggestionDefaults()
+        
+        return true
+    }
+}
+
+extension SuggestionsViewController {
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        println("cellForRow start")
         var cell = tableView.dequeueReusableCellWithIdentifier("suggestionCell") as? UITableViewCell
         if (cell == nil) {
             cell = UITableViewCell(style: .Default, reuseIdentifier: "suggestionCell")
@@ -52,7 +78,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        println("numberOfRows")
         return self.suggestions.count
     }
     
@@ -76,32 +101,4 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     
-    func textFieldShouldReturn(textField: UITextField) -> Bool {
-        //
-        println("shouldReturn")
-        if let text = textField.text {
-            let frame = textField.frame
-            let cell = textField.superview as? UITableViewCell
-            if cell != nil {
-                cell!.textLabel!.text = text
-                textField.removeFromSuperview()
-            }
-        }
-        
-        updateSuggestionDefaults()
-        
-        return true
-    }
-
-    func updateSuggestionDefaults() {
-        
-        for i in 0...(self.suggestionTableView.numberOfRowsInSection(0) - 1) {
-            if let text = self.suggestionTableView?.cellForRowAtIndexPath(NSIndexPath(forRow: i, inSection: 0))?.textLabel?.text as String? {
-                self.suggestions[i] = text
-            }
-        }
-        self.defaults?.setObject(self.suggestions, forKey: "suggestions")
-    }
-
 }
-

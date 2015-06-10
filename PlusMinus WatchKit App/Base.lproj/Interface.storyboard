@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7531" systemVersion="14B25" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="PlusMinus_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="0.20000000000000015" heightAdjustment="12" alignment="center" verticalAlignment="bottom" contentMode="center" radius="0.0" spacing="21" id="Shf-WV-xqE">
+                            <items>
+                                <button width="0.50000000000000011" alignment="left" title="-" id="ehl-yO-wnB">
+                                    <color key="backgroundColor" red="1" green="0.035602053449999997" blue="0.05961097186" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="29"/>
+                                    <connections>
+                                        <action selector="minusButtonPressed" destination="AgC-eL-Hgc" id="ii0-iJ-fsY"/>
+                                    </connections>
+                                </button>
+                                <button width="0.50000000000000011" alignment="left" title="+" id="hbf-TY-U0U">
+                                    <color key="backgroundColor" red="0.30642443600000002" green="0.79633134660000005" blue="0.2349219401" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="system" pointSize="29"/>
+                                    <connections>
+                                        <action selector="plusButtonPressed" destination="AgC-eL-Hgc" id="bNd-hY-Enb"/>
+                                    </connections>
+                                </button>
+                            </items>
+                            <edgeInsets key="margins" left="14" right="14" top="0.0" bottom="0.0"/>
+                        </group>
+                        <button width="1" alignment="left" title="Examples" id="a3C-iq-CSk">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="20"/>
+                            <connections>
+                                <action selector="titleButtonPressed" destination="AgC-eL-Hgc" id="ckl-KY-eZT"/>
+                            </connections>
+                        </button>
+                        <button alignment="center" verticalAlignment="center" title="0" id="02n-7c-LkD">
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="51"/>
+                            <connections>
+                                <action selector="countButtonPressed" destination="AgC-eL-Hgc" id="fxF-md-d4E"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="axh-55-RW4">
+                        <items>
+                            <menuItem title="Menu Item" icon="accept" id="iLf-Ck-l94"/>
+                            <menuItem title="Menu Item" id="vff-bP-QNB"/>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="countButton" destination="02n-7c-LkD" id="rZE-5J-7sD"/>
+                        <outlet property="minusButton" destination="ehl-yO-wnB" id="hch-72-uhb"/>
+                        <outlet property="plusButton" destination="hbf-TY-U0U" id="3cV-M1-iMd"/>
+                        <outlet property="titleButton" destination="a3C-iq-CSk" id="1Xb-9t-8XE"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="141" y="219"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="rjY-Ar-IMT">
+            <objects>
+                <glanceController spacing="0.0" id="Sv0-Ai-Zie" customClass="GlanceController" customModule="PlusMinus_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="gv7-I2-MZq">
+                            <items>
+                                <label width="1" height="1" alignment="left" text="Examples: 10" minimumScaleFactor="0.30000000000000016" id="noh-vH-Q7F">
+                                    <fontDescription key="font" type="system" pointSize="31"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group alignment="left" id="eew-Gs-W6Y">
+                            <items>
+                                <table alignment="left" id="OzM-wf-V6l">
+                                    <items>
+                                        <tableRow id="2Gw-DM-fVz">
+                                            <group key="rootItem" width="1" alignment="left" id="Mg3-eD-Wu1"/>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="164" y="514"/>
+        </scene>
+    </scenes>
+</document>

@@ -7,12 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A16BFB1B1ADC70A4002CFC0E /* SuggestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFB1A1ADC70A4002CFC0E /* SuggestionsViewController.swift */; };
+		A16BFB1D1ADC713F002CFC0E /* CounterDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFB1C1ADC713E002CFC0E /* CounterDataViewController.swift */; };
+		A16BFB4F1ADC7536002CFC0E /* PMAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BFB4E1ADC7536002CFC0E /* PMAssets.swift */; };
 		A1FD8E1C1AD646CF0039F626 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD8E1B1AD646CF0039F626 /* AppDelegate.swift */; };
 		A1FD8E1E1AD646CF0039F626 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD8E1D1AD646CF0039F626 /* ViewController.swift */; };
 		A1FD8E211AD646CF0039F626 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E1F1AD646CF0039F626 /* Main.storyboard */; };
 		A1FD8E231AD646CF0039F626 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E221AD646CF0039F626 /* Images.xcassets */; };
 		A1FD8E261AD646CF0039F626 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E241AD646CF0039F626 /* LaunchScreen.xib */; };
 		A1FD8E321AD646CF0039F626 /* PlusMinusTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD8E311AD646CF0039F626 /* PlusMinusTests.swift */; };
+		A1FD8E441AD646D90039F626 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD8E431AD646D90039F626 /* InterfaceController.swift */; };
+		A1FD8E461AD646D90039F626 /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1FD8E451AD646D90039F626 /* GlanceController.swift */; };
+		A1FD8E481AD646D90039F626 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E471AD646D90039F626 /* Images.xcassets */; };
+		A1FD8E4C1AD646DA0039F626 /* PlusMinus WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E4B1AD646DA0039F626 /* PlusMinus WatchKit App.app */; };
+		A1FD8E541AD646DA0039F626 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E521AD646DA0039F626 /* Interface.storyboard */; };
+		A1FD8E561AD646DA0039F626 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1FD8E551AD646DA0039F626 /* Images.xcassets */; };
+		A1FD8E591AD646DA0039F626 /* PlusMinus WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A1FD8E3F1AD646D90039F626 /* PlusMinus WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,9 +33,42 @@
 			remoteGlobalIDString = A1FD8E151AD646CE0039F626;
 			remoteInfo = PlusMinus;
 		};
+		A1FD8E4D1AD646DA0039F626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1FD8E0E1AD646CE0039F626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FD8E4A1AD646DA0039F626;
+			remoteInfo = "PlusMinus WatchKit App";
+		};
+		A1FD8E571AD646DA0039F626 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A1FD8E0E1AD646CE0039F626 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A1FD8E3E1AD646D90039F626;
+			remoteInfo = "PlusMinus WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A1FD8E601AD646DA0039F626 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A1FD8E591AD646DA0039F626 /* PlusMinus WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A16BFB1A1ADC70A4002CFC0E /* SuggestionsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SuggestionsViewController.swift; sourceTree = "<group>"; };
+		A16BFB1C1ADC713E002CFC0E /* CounterDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterDataViewController.swift; sourceTree = "<group>"; };
+		A16BFB4E1ADC7536002CFC0E /* PMAssets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PMAssets.swift; sourceTree = "<group>"; };
+		A19DA8491AF3DBAD0066ABAF /* PlusMinus-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PlusMinus-Bridging-Header.h"; sourceTree = "<group>"; };
+		A1D663CC1AD66EF500BEC350 /* PlusMinus WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "PlusMinus WatchKit Extension.entitlements"; sourceTree = "<group>"; };
 		A1FD8E161AD646CF0039F626 /* PlusMinus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlusMinus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FD8E1A1AD646CF0039F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FD8E1B1AD646CF0039F626 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +79,16 @@
 		A1FD8E2B1AD646CF0039F626 /* PlusMinusTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PlusMinusTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1FD8E301AD646CF0039F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1FD8E311AD646CF0039F626 /* PlusMinusTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusMinusTests.swift; sourceTree = "<group>"; };
+		A1FD8E3F1AD646D90039F626 /* PlusMinus WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PlusMinus WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FD8E421AD646D90039F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FD8E431AD646D90039F626 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A1FD8E451AD646D90039F626 /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		A1FD8E471AD646D90039F626 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1FD8E4B1AD646DA0039F626 /* PlusMinus WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PlusMinus WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1FD8E511AD646DA0039F626 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1FD8E531AD646DA0039F626 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A1FD8E551AD646DA0039F626 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A1FD8E611AD646E50039F626 /* PlusMinus.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PlusMinus.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +106,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1FD8E3C1AD646D90039F626 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -61,7 +121,10 @@
 			children = (
 				A1FD8E181AD646CF0039F626 /* PlusMinus */,
 				A1FD8E2E1AD646CF0039F626 /* PlusMinusTests */,
+				A1FD8E401AD646D90039F626 /* PlusMinus WatchKit Extension */,
+				A1FD8E4F1AD646DA0039F626 /* PlusMinus WatchKit App */,
 				A1FD8E171AD646CF0039F626 /* Products */,
+				A19DA8491AF3DBAD0066ABAF /* PlusMinus-Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +133,8 @@
 			children = (
 				A1FD8E161AD646CF0039F626 /* PlusMinus.app */,
 				A1FD8E2B1AD646CF0039F626 /* PlusMinusTests.xctest */,
+				A1FD8E3F1AD646D90039F626 /* PlusMinus WatchKit Extension.appex */,
+				A1FD8E4B1AD646DA0039F626 /* PlusMinus WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -77,8 +142,12 @@
 		A1FD8E181AD646CF0039F626 /* PlusMinus */ = {
 			isa = PBXGroup;
 			children = (
+				A1FD8E611AD646E50039F626 /* PlusMinus.entitlements */,
 				A1FD8E1B1AD646CF0039F626 /* AppDelegate.swift */,
 				A1FD8E1D1AD646CF0039F626 /* ViewController.swift */,
+				A16BFB1A1ADC70A4002CFC0E /* SuggestionsViewController.swift */,
+				A16BFB1C1ADC713E002CFC0E /* CounterDataViewController.swift */,
+				A16BFB4E1ADC7536002CFC0E /* PMAssets.swift */,
 				A1FD8E1F1AD646CF0039F626 /* Main.storyboard */,
 				A1FD8E221AD646CF0039F626 /* Images.xcassets */,
 				A1FD8E241AD646CF0039F626 /* LaunchScreen.xib */,
@@ -112,6 +181,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		A1FD8E401AD646D90039F626 /* PlusMinus WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A1D663CC1AD66EF500BEC350 /* PlusMinus WatchKit Extension.entitlements */,
+				A1FD8E431AD646D90039F626 /* InterfaceController.swift */,
+				A1FD8E451AD646D90039F626 /* GlanceController.swift */,
+				A1FD8E471AD646D90039F626 /* Images.xcassets */,
+				A1FD8E411AD646D90039F626 /* Supporting Files */,
+			);
+			path = "PlusMinus WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		A1FD8E411AD646D90039F626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1FD8E421AD646D90039F626 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A1FD8E4F1AD646DA0039F626 /* PlusMinus WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A1FD8E521AD646DA0039F626 /* Interface.storyboard */,
+				A1FD8E551AD646DA0039F626 /* Images.xcassets */,
+				A1FD8E501AD646DA0039F626 /* Supporting Files */,
+			);
+			path = "PlusMinus WatchKit App";
+			sourceTree = "<group>";
+		};
+		A1FD8E501AD646DA0039F626 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A1FD8E511AD646DA0039F626 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -122,10 +229,12 @@
 				A1FD8E121AD646CE0039F626 /* Sources */,
 				A1FD8E131AD646CE0039F626 /* Frameworks */,
 				A1FD8E141AD646CE0039F626 /* Resources */,
+				A1FD8E601AD646DA0039F626 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A1FD8E581AD646DA0039F626 /* PBXTargetDependency */,
 			);
 			name = PlusMinus;
 			productName = PlusMinus;
@@ -150,6 +259,39 @@
 			productReference = A1FD8E2B1AD646CF0039F626 /* PlusMinusTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A1FD8E3E1AD646D90039F626 /* PlusMinus WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FD8E5D1AD646DA0039F626 /* Build configuration list for PBXNativeTarget "PlusMinus WatchKit Extension" */;
+			buildPhases = (
+				A1FD8E3B1AD646D90039F626 /* Sources */,
+				A1FD8E3C1AD646D90039F626 /* Frameworks */,
+				A1FD8E3D1AD646D90039F626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A1FD8E4E1AD646DA0039F626 /* PBXTargetDependency */,
+			);
+			name = "PlusMinus WatchKit Extension";
+			productName = "PlusMinus WatchKit Extension";
+			productReference = A1FD8E3F1AD646D90039F626 /* PlusMinus WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		A1FD8E4A1AD646DA0039F626 /* PlusMinus WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A1FD8E5A1AD646DA0039F626 /* Build configuration list for PBXNativeTarget "PlusMinus WatchKit App" */;
+			buildPhases = (
+				A1FD8E491AD646DA0039F626 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PlusMinus WatchKit App";
+			productName = "PlusMinus WatchKit App";
+			productReference = A1FD8E4B1AD646DA0039F626 /* PlusMinus WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,10 +303,29 @@
 				TargetAttributes = {
 					A1FD8E151AD646CE0039F626 = {
 						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 55P2G2R377;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					A1FD8E2A1AD646CF0039F626 = {
 						CreatedOnToolsVersion = 6.3;
 						TestTargetID = A1FD8E151AD646CE0039F626;
+					};
+					A1FD8E3E1AD646D90039F626 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 55P2G2R377;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					A1FD8E4A1AD646DA0039F626 = {
+						CreatedOnToolsVersion = 6.3;
+						DevelopmentTeam = 55P2G2R377;
 					};
 				};
 			};
@@ -183,6 +344,8 @@
 			targets = (
 				A1FD8E151AD646CE0039F626 /* PlusMinus */,
 				A1FD8E2A1AD646CF0039F626 /* PlusMinusTests */,
+				A1FD8E3E1AD646D90039F626 /* PlusMinus WatchKit Extension */,
+				A1FD8E4A1AD646DA0039F626 /* PlusMinus WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +368,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1FD8E3D1AD646D90039F626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FD8E481AD646D90039F626 /* Images.xcassets in Resources */,
+				A1FD8E4C1AD646DA0039F626 /* PlusMinus WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A1FD8E491AD646DA0039F626 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FD8E541AD646DA0039F626 /* Interface.storyboard in Resources */,
+				A1FD8E561AD646DA0039F626 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,6 +395,9 @@
 			files = (
 				A1FD8E1E1AD646CF0039F626 /* ViewController.swift in Sources */,
 				A1FD8E1C1AD646CF0039F626 /* AppDelegate.swift in Sources */,
+				A16BFB1B1ADC70A4002CFC0E /* SuggestionsViewController.swift in Sources */,
+				A16BFB1D1ADC713F002CFC0E /* CounterDataViewController.swift in Sources */,
+				A16BFB4F1ADC7536002CFC0E /* PMAssets.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +409,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A1FD8E3B1AD646D90039F626 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1FD8E441AD646D90039F626 /* InterfaceController.swift in Sources */,
+				A1FD8E461AD646D90039F626 /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -232,6 +425,16 @@
 			isa = PBXTargetDependency;
 			target = A1FD8E151AD646CE0039F626 /* PlusMinus */;
 			targetProxy = A1FD8E2C1AD646CF0039F626 /* PBXContainerItemProxy */;
+		};
+		A1FD8E4E1AD646DA0039F626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1FD8E4A1AD646DA0039F626 /* PlusMinus WatchKit App */;
+			targetProxy = A1FD8E4D1AD646DA0039F626 /* PBXContainerItemProxy */;
+		};
+		A1FD8E581AD646DA0039F626 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A1FD8E3E1AD646D90039F626 /* PlusMinus WatchKit Extension */;
+			targetProxy = A1FD8E571AD646DA0039F626 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -250,6 +453,14 @@
 				A1FD8E251AD646CF0039F626 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		A1FD8E521AD646DA0039F626 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A1FD8E531AD646DA0039F626 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,9 +551,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PlusMinus/PlusMinus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlusMinus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlusMinus-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -350,9 +568,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = PlusMinus/PlusMinus.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = PlusMinus/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "PlusMinus-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -390,6 +614,77 @@
 			};
 			name = Release;
 		};
+		A1FD8E5B1AD646DA0039F626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = PlusMinus_WatchKit_Extension;
+				INFOPLIST_FILE = "PlusMinus WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		A1FD8E5C1AD646DA0039F626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IBSC_MODULE = PlusMinus_WatchKit_Extension;
+				INFOPLIST_FILE = "PlusMinus WatchKit App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		A1FD8E5E1AD646DA0039F626 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PlusMinus WatchKit Extension/PlusMinus WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PlusMinus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlusMinus WatchKit Extension-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A1FD8E5F1AD646DA0039F626 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = "PlusMinus WatchKit Extension/PlusMinus WatchKit Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "PlusMinus WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "PlusMinus WatchKit Extension-Bridging-Header.h";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +704,7 @@
 				A1FD8E371AD646CF0039F626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1FD8E381AD646CF0039F626 /* Build configuration list for PBXNativeTarget "PlusMinusTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +713,25 @@
 				A1FD8E3A1AD646CF0039F626 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1FD8E5A1AD646DA0039F626 /* Build configuration list for PBXNativeTarget "PlusMinus WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FD8E5B1AD646DA0039F626 /* Debug */,
+				A1FD8E5C1AD646DA0039F626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1FD8E5D1AD646DA0039F626 /* Build configuration list for PBXNativeTarget "PlusMinus WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A1FD8E5E1AD646DA0039F626 /* Debug */,
+				A1FD8E5F1AD646DA0039F626 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

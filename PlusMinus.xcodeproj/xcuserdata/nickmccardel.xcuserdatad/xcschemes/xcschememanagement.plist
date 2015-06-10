@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Glance - PlusMinus WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>PlusMinus WatchKit App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>PlusMinus.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -18,6 +28,11 @@
 			<true/>
 		</dict>
 		<key>A1FD8E2A1AD646CF0039F626</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A1FD8E4A1AD646DA0039F626</key>
 		<dict>
 			<key>primary</key>
 			<true/>
